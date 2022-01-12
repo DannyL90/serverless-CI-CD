@@ -28,4 +28,3 @@ pipeline {
       echo 'Your set up work seccessfully'
     }
   }
-}

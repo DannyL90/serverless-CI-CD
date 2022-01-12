@@ -23,8 +23,3 @@ pipeline {
     }
   }
 }
-  Post {
-    sucess {
-      echo 'Your set up work seccessfully'
-    }
-  }

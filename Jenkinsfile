@@ -7,14 +7,12 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building..'
-        sh 'pip3 install -r requirements.txt'
       }
     }
 
     stage('Test') {
       steps {
         echo 'Testing..'
-        sh 'python3 sample_unit_test.py'
       }
     }
 
@@ -22,6 +20,12 @@ pipeline {
       steps {
         echo 'Deploying....'
       }
+    }
+  }
+}
+  Post {
+    sucess {
+      echo 'Your set up work seccessfully'
     }
   }
 }
